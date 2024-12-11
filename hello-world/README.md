@@ -10,3 +10,13 @@ As a toy problem, the project will learn a functional approximation of the sine 
 - Google Colab
 - PyTorch
 - PyTorch Mobile/ExecuTorch/ONNX Runtime
+
+## Procedure (High-Level)
+This section details an overview of the project procedure. Steps that require further explanation are given their own sections.
+1. Generate dataset
+2. Allocate data appropriately for train/validate/test
+3. Choosing a model (admittedly arbitrary) to approximate the sine function
+4. Train + evaluate model
+5. Write code for on-device inference
+6. Build code into binary
+7. Deploy code onto microcontroller
