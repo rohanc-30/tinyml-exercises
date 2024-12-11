@@ -30,5 +30,5 @@ We generate our y values as y_i = sin(x_i) + e_i, where e_i ~ N(0, 0.1^2). This 
 
 For allocation, we assume that there is sufficient data to partition into train/validation/test sets (cross-validation, bootstrapping, information criteria are unnecessary). We split our data into 60% train, 20% validation, 20% test.
 
-The partitioned datasets are exported as 3 csv files, found at train.csv, validation.csv, and test.csv.
+The partitioned datasets are exported as 3 csv files, found at data/train.csv, data/validation.csv, and data/test.csv.
 
