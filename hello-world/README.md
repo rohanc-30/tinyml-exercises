@@ -11,6 +11,11 @@ As a toy problem, the project will learn a functional approximation of the sine 
 - PyTorch
 - PyTorch Mobile/ExecuTorch/ONNX Runtime
 
+## File Tree
+- `data` is folder contains csv-formatted files with our train, validation, and test data
+- `datagen.ipynb` is a Python notebook with functionality for dataset generation and partitioning into train/validation/test
+- `model_train_eval.ipynb` is a Python notebook that defines a model architecture, trains it on our train data, and evaluates it on validation/test data
+
 ## Procedure (High-Level)
 This section details an overview of the project procedure. Steps that require further explanation are given their own sections.
 1. Generate dataset
@@ -30,5 +35,7 @@ We generate our y values as y_i = sin(x_i) + e_i, where e_i ~ N(0, 0.1^2). This 
 
 For allocation, we assume that there is sufficient data to partition into train/validation/test sets (cross-validation, bootstrapping, information criteria are unnecessary). We split our data into 60% train, 20% validation, 20% test.
 
-The partitioned datasets are exported as 3 csv files, found at data/train.csv, data/val.csv, and data/test.csv.
+The partitioned datasets are exported as 3 csv files, found at `data/train.csv`, `data/val.csv`, and `data/test.csv`.
+
+## Model Training + Evaluation
 
